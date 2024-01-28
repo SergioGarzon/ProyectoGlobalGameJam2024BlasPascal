@@ -77,4 +77,4 @@ Contiene contenido explicito, violento. Jugar con discrecion pero jugar...
 <br />
 
 #### Link para acceder al proyecto: 
-<link href="https://globalgamejam.org/games/2024/zaping-3" />Sitio web del proyecto</a>
+<a href="https://globalgamejam.org/games/2024/zaping-3">Sitio web del proyecto</a>
