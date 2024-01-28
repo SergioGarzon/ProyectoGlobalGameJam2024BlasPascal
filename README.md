@@ -1,4 +1,4 @@
-# ProyectoGlobalGameJam2024BlasPascal
+# Proyecto Global Game Jam 2024 - "Universidad Blas Pascal"
 
 ### Sobre el juego
 
@@ -16,7 +16,15 @@ Contiene contenido explicito, violento. Jugar con discrecion pero jugar...
 
 <br />
 
+<img src="./Capturas juego/1.png" alt="Primer pantalla" />
+
+<br />
+
 **Primera escena de la ruleta**
+
+<br />
+
+<img src="./Capturas juego/6.png" alt="Escena ruleta" />
 
 <br />
 
@@ -24,7 +32,15 @@ Contiene contenido explicito, violento. Jugar con discrecion pero jugar...
 
 <br />
 
+<img src="./Capturas juego/2.png" alt="Acertijo escena 1" />
+
+<br />
+
 **Tercer escena ¿Donde esta Wally?**
+
+<br />
+
+<img src="./Capturas juego/3.png" alt="Wally" />
 
 <br />
 
@@ -33,6 +49,10 @@ Contiene contenido explicito, violento. Jugar con discrecion pero jugar...
 <br />
 
 **Quinta escena Frogger**
+
+<br />
+
+<img src="./Capturas juego/4.png" alt="Frogger" />
 
 <br />
 
