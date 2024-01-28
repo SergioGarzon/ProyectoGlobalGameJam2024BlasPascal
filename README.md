@@ -20,7 +20,7 @@ Contiene contenido explicito, violento. Jugar con discrecion pero jugar...
 
 <br />
 
-## Primera escena de la ruleta**
+## Primera escena de la ruleta
 
 <br />
 
@@ -32,7 +32,7 @@ Contiene contenido explicito, violento. Jugar con discrecion pero jugar...
 
 <br />
 
-## Segunda escena ¿Quien es este personaje?**
+## Segunda escena ¿Quien es este personaje?
 
 <br />
 
@@ -40,7 +40,7 @@ Contiene contenido explicito, violento. Jugar con discrecion pero jugar...
 
 <br />
 
-## Tercer escena ¿Donde esta Wally?**
+## Tercer escena ¿Donde esta Wally?
 
 <br />
 
@@ -48,7 +48,7 @@ Contiene contenido explicito, violento. Jugar con discrecion pero jugar...
 
 <br />
 
-## Cuarta escena ¿Quien es este personaje?**
+## Cuarta escena ¿Quien es este personaje?
 
 <br />
 
@@ -56,7 +56,7 @@ Contiene contenido explicito, violento. Jugar con discrecion pero jugar...
 
 <br />
 
-## Quinta escena Frogger**
+## Quinta escena Frogger
 
 <br />
 
@@ -64,7 +64,7 @@ Contiene contenido explicito, violento. Jugar con discrecion pero jugar...
 
 <br />
 
-## Sexta escena 'El juego de las cartas'**
+## Sexta escena 'El juego de las cartas'
 
 <br />
 
@@ -75,8 +75,3 @@ Contiene contenido explicito, violento. Jugar con discrecion pero jugar...
 <img src="./Capturas juego/cartas2.png" alt="Juego de Cartas 2" />
 
 <br />
-
-
-
-
-
