@@ -16,6 +16,7 @@ public class RegularVolumen : MonoBehaviour
     }
 
     public void DetenerSonido()
+
     {
         sonido.Stop();
     }

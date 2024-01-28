@@ -8,21 +8,30 @@ public class CollisionDetector : MonoBehaviour
 {
     public GameObject panel;
     public Image imagePanel;
+    public Image imgButtonStart;
 
     public GameObject papelCerrado;
     public GameObject papelAbierto;
 
     public Sprite[] arraySprites;
+    public Sprite[] arraySpriteButton;
+
+
     public Button btnStartRuleta;
     public Text txtTexto;
 
     private int valueCollision;
     private int valorActivacion;
 
+    public AudioSource audio;
+
     public void Start()
     {
         valueCollision = 0;
         valorActivacion = 0;
+
+        float volumen = PlayerPrefs.GetFloat("ValorSlider", 0);
+        audio.volume = volumen;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -94,8 +103,9 @@ public class CollisionDetector : MonoBehaviour
         if(valorActivacion == 0)
         {
             valorActivacion = 1;
+            imgButtonStart.sprite = arraySpriteButton[0];
         } else
-        {
+        {            
             switch (valueCollision)
             {
                 case 1:
@@ -160,30 +170,35 @@ public class CollisionDetector : MonoBehaviour
                     break;
             }
 
+            imgButtonStart.sprite = arraySpriteButton[1];
+
             StartCoroutine(StartCorrutinePanel());
-        }    
+        }
+
+        
+
     }
 
     IEnumerator StartCorrutinePanel()
-    {
+    {        
 
-        imagePanel.sprite = arraySprites[0];
-
+        imagePanel.sprite = arraySprites[0];        
 
         yield return new WaitForSeconds(1f);
 
         imagePanel.sprite = arraySprites[1];
+        audio.Play();
 
         yield return new WaitForSeconds(0.3f);
-
+        
         papelCerrado.SetActive(true);
 
         yield return new WaitForSeconds(0.3f);
 
         papelCerrado.SetActive(false);
-        papelAbierto.SetActive(true);
+        papelAbierto.SetActive(true);        
 
-        
+
         switch (valueCollision)
         {
             case 1:
@@ -226,6 +241,7 @@ public class CollisionDetector : MonoBehaviour
 
         yield return new WaitForSeconds(5f);
 
+        imgButtonStart.sprite = arraySpriteButton[2];
         txtTexto.text = "";
         papelAbierto.SetActive(false);
         panel.SetActive(false);
@@ -233,12 +249,5 @@ public class CollisionDetector : MonoBehaviour
         btnStartRuleta.enabled = true;
 
     }
-
-    
-
-    
-
-
-   
 
 }

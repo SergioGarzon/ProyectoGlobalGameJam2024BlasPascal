@@ -17,6 +17,8 @@ public class ChangeSceneButton : MonoBehaviour
 
     private string nombreEscena;
 
+    public AudioSource sonidoIniciarEscena;
+
 
     public void Start()
     {
@@ -45,9 +47,7 @@ public class ChangeSceneButton : MonoBehaviour
 
         if (valorRandom >= 82 && valorRandom <= 100)
             nombreEscena = "BuscandoWally";
-
-
-        
+               
 
         StartCoroutine(CorrutinaBotonesEscena());
     }
@@ -58,6 +58,11 @@ public class ChangeSceneButton : MonoBehaviour
 
         btnStart.sprite = btnStart2;
         btnQuit.sprite = btnQuit1;
+
+        float valor = PlayerPrefs.GetFloat("ValorSlider", 0);
+        sonidoIniciarEscena.volume = valor;
+
+        sonidoIniciarEscena.Play();
 
         yield return new WaitForSeconds(0.6f);
 

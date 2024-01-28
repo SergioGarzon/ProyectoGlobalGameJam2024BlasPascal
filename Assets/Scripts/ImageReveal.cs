@@ -20,6 +20,10 @@ public class ImageReveal : MonoBehaviour
 
     void Start()
     {
+        float volumen = PlayerPrefs.GetFloat("ValorSlider", 0);
+        suspenso.volume = volumen;
+        suspensoInc.volume = volumen;
+
         suspenso.Play();
 
         // Ocultar la imagen y mostrar la silueta al inicio

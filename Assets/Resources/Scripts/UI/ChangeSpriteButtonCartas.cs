@@ -10,11 +10,19 @@ public class ChangeSpriteButtonCartas : MonoBehaviour
     public Image[] btnCarta;
     public Sprite[] imagen1;
 
+    public AudioSource audio;
+
     private int numero;
+    private int bloqueoSegundaVuelta;
 
     public void Start()
     {
         numero = 0;
+        bloqueoSegundaVuelta = 0;
+
+        float volumen = PlayerPrefs.GetFloat("ValorSlider", 0);
+        audio.volume = volumen;
+
     }
 
     public void mostrarCarta(int numeroCarta)
@@ -24,27 +32,35 @@ public class ChangeSpriteButtonCartas : MonoBehaviour
         {
             case 1:
                 setearCarta(btnCarta[0]);
+                btnCartasJuego[0].enabled = false;
                 break;
             case 2:
                 setearCarta(btnCarta[1]);
+                btnCartasJuego[1].enabled = false;
                 break;
             case 3:
                 setearCarta(btnCarta[2]);
+                btnCartasJuego[2].enabled = false;
                 break;
             case 4:
                 setearCarta(btnCarta[3]);
+                btnCartasJuego[3].enabled = false;
                 break;
             case 5:
                 setearCarta(btnCarta[4]);
+                btnCartasJuego[4].enabled = false;
                 break;
             case 6:
                 setearCarta(btnCarta[5]);
+                btnCartasJuego[5].enabled = false;
                 break;
             case 7:
                 setearCarta(btnCarta[6]);
+                btnCartasJuego[6].enabled = false;
                 break;
             case 8:
                 setearCarta(btnCarta[7]);
+                btnCartasJuego[7].enabled = false;
                 break;
         }
     }
@@ -82,13 +98,17 @@ public class ChangeSpriteButtonCartas : MonoBehaviour
                 break;
         }
 
-        bloquearBotones();
+        audio.Play();
+
+        bloqueoSegundaVuelta++;
+
+        if(bloqueoSegundaVuelta == 2)
+            bloquearBotones();
     }
 
 
     public void bloquearBotones()
-    {
-       
+    {      
 
         for(int i = 0; i < btnCartasJuego.Length; i++)
         {
@@ -96,19 +116,25 @@ public class ChangeSpriteButtonCartas : MonoBehaviour
         }
 
         StartCoroutine(VolverAActivarBotonesyResetear());
-
     }
 
 
     IEnumerator VolverAActivarBotonesyResetear()
     {
-        yield return new WaitForSeconds(1.5f);
+
+       yield return new WaitForSeconds(1.5f);
 
         for (int i = 0; i < btnCartasJuego.Length; i++)
         {
             btnCartasJuego[i].enabled = true;
             btnCarta[i].sprite = imagen1[4];
         }
+
+
+        audio.Play();
+
+
+        bloqueoSegundaVuelta = 0;
 
     }
 
