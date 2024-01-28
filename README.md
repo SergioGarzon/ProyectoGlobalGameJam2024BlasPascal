@@ -75,3 +75,6 @@ Contiene contenido explicito, violento. Jugar con discrecion pero jugar...
 <img src="./Capturas juego/cartas2.png" alt="Juego de Cartas 2" />
 
 <br />
+
+#### Link para acceder al proyecto: 
+<a lnk="https://globalgamejam.org/games/2024/zaping-3" />
