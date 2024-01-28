@@ -8,7 +8,7 @@ Contiene contenido explicito, violento. Jugar con discrecion pero jugar...
 
 ### Integrantes
 
-<img src="./Assets/Resources/Images/StartMenu/creditos boton.png" alt="Creditos del juego" />
+<img src="./Assets/Resources/Images/StartMenu/CreditosFinal.png" alt="Creditos del juego" />
 
 ### Pantallas del juego
 
