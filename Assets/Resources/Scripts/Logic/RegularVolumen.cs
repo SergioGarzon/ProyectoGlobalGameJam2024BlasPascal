@@ -9,6 +9,7 @@ public class RegularVolumen : MonoBehaviour
     public void Start()
     {
         float volumen = PlayerPrefs.GetFloat("ValorSlider", 0);
+
         sonido.volume = volumen;
 
 

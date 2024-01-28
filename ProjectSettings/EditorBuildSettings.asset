@@ -24,15 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Cartas.unity
     guid: 4777bf3082820024fa163d5a96cd5e50
   - enabled: 1
-    path: Assets/Scenes/Frogger.unity
-    guid: d7ac66cf981cdf848859c505abb74d71
-  - enabled: 1
     path: Assets/Scenes/BuscandoWally.unity
     guid: b2a20ea959bb0eb488c57a82ee8854d2
   - enabled: 1
-    path: Assets/Scenes/FrogScene2.unity
-    guid: 9ffa850dc01551b46ad9ebe51f8adf60
-  - enabled: 1
-    path: Assets/Scenes/FrogerScene4.unity
-    guid: bbe32bb18511a9c4888143e13294805d
+    path: Assets/Scenes/PruebaFrogger.unity
+    guid: 762cae2f84ad30348bc9f986d54e8551
   m_configObjects: {}

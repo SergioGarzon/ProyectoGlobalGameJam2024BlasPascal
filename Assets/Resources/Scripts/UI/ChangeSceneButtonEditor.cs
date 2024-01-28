@@ -21,11 +21,6 @@ public class ChangeSceneButtonEditor : MonoBehaviour
         {
             StartCoroutine(CorrutinaCambiarEscena());
         } 
-
-        if(accion == 2)
-        {
-
-        }
         
     }
 

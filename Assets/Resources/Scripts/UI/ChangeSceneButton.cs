@@ -19,14 +19,19 @@ public class ChangeSceneButton : MonoBehaviour
 
     public AudioSource sonidoIniciarEscena;
 
+    private int contadorEscena;
+
 
     public void Start()
     {
         nombreEscena = "";
+        contadorEscena = PlayerPrefs.GetInt("CambioEscena", 0);
     }
 
     public void ChangeSceneRandom()
     {
+
+        /*
         int valorRandom = (int)(Random.Range(0, 99) + 1);
               
 
@@ -47,8 +52,21 @@ public class ChangeSceneButton : MonoBehaviour
 
         if (valorRandom >= 82 && valorRandom <= 100)
             nombreEscena = "BuscandoWally";
-               
+        */
 
+
+        switch (contadorEscena)
+        {
+            case 0: nombreEscena = "VideoScene"; PlayerPrefs.SetInt("CambioEscena", 1); break;
+            case 1: nombreEscena = "QuienEsMarley"; PlayerPrefs.SetInt("CambioEscena", 2); break;
+            case 2: nombreEscena = "BuscandoWally"; PlayerPrefs.SetInt("CambioEscena", 3); break;
+            case 3: nombreEscena = "QuienEsCharly"; PlayerPrefs.SetInt("CambioEscena", 4); break;
+            case 4: nombreEscena = "PruebaFrogger"; PlayerPrefs.SetInt("CambioEscena", 5); break;
+            case 5: nombreEscena = "Cartas"; PlayerPrefs.SetInt("CambioEscena", 0); break;
+        }
+
+        PlayerPrefs.Save();
+        
         StartCoroutine(CorrutinaBotonesEscena());
     }
 
@@ -82,6 +100,9 @@ public class ChangeSceneButton : MonoBehaviour
         btnStart.sprite = btnStart1;
 
         yield return new WaitForSeconds(0.6f);
+
+        PlayerPrefs.SetInt("CambioEscena", 0);
+        PlayerPrefs.Save();
 
         #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;

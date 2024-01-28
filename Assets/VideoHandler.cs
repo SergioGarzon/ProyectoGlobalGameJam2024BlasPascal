@@ -8,6 +8,10 @@ public class VideoHandler : MonoBehaviour
     public VideoPlayer videoPlayer;
     public GameObject videoTexture;
 
+    //Aqui edito
+    public GameObject objetoEliminar;
+    public AudioSource audioEliminar;
+
     public CountdownTimer countdownTimer;
 
     private float startTime = 0;
@@ -15,6 +19,10 @@ public class VideoHandler : MonoBehaviour
 
     void Start()
     {
+        audioEliminar = objetoEliminar.GetComponent<AudioSource>(); 
+        objetoEliminar.SetActive(false);
+
+        audioEliminar.Stop();
         endTime = (float)videoPlayer.length;
     }
 
