@@ -1,18 +1,18 @@
 # Proyecto Global Game Jam 2024 - "Universidad Blas Pascal"
 
-### Sobre el juego
+## Sobre el juego
 
 Juego 2D que contiene mini juegos absurdos que trolean al jugador y ofrecen remates no esperados. ¿Podria llamarse esto un juego?
 
 Contiene contenido explicito, violento. Jugar con discrecion pero jugar...
 
-### Integrantes
+## Integrantes
 
 <img src="./Assets/Resources/Images/StartMenu/CreditosFinal.png" alt="Creditos del juego" />
 
-### Pantallas del juego
+## Pantallas del juego
 
-**Pantalla inicial (Menu)**
+## Pantalla inicial (Menu)
 
 <br />
 
@@ -20,7 +20,7 @@ Contiene contenido explicito, violento. Jugar con discrecion pero jugar...
 
 <br />
 
-**Primera escena de la ruleta**
+## Primera escena de la ruleta**
 
 <br />
 
@@ -28,7 +28,11 @@ Contiene contenido explicito, violento. Jugar con discrecion pero jugar...
 
 <br />
 
-**Segunda escena ¿Quien es este personaje?**
+<img src="./Capturas juego/ruleta2.png" alt="Escena ruleta 2" />
+
+<br />
+
+## Segunda escena ¿Quien es este personaje?**
 
 <br />
 
@@ -36,7 +40,7 @@ Contiene contenido explicito, violento. Jugar con discrecion pero jugar...
 
 <br />
 
-**Tercer escena ¿Donde esta Wally?**
+## Tercer escena ¿Donde esta Wally?**
 
 <br />
 
@@ -44,11 +48,15 @@ Contiene contenido explicito, violento. Jugar con discrecion pero jugar...
 
 <br />
 
-**Cuarta escena ¿Quien es este personaje?**
+## Cuarta escena ¿Quien es este personaje?**
 
 <br />
 
-**Quinta escena Frogger**
+<img src="./Capturas juego/adivinanza.png" alt="Adivinanza 2" />
+
+<br />
+
+## Quinta escena Frogger**
 
 <br />
 
@@ -56,9 +64,18 @@ Contiene contenido explicito, violento. Jugar con discrecion pero jugar...
 
 <br />
 
-**Sexta escena 'El juego de las cartas'**
+## Sexta escena 'El juego de las cartas'**
 
 <br />
+
+<img src="./Capturas juego/cartas1.png" alt="Juego de Cartas 1" />
+
+<br />
+
+<img src="./Capturas juego/cartas2.png" alt="Juego de Cartas 2" />
+
+<br />
+
 
 
 
